@@ -7,26 +7,26 @@
         "title": "ME",
         "description": "A creative & innocent deer",
         "text": "Deep in the Mind Forest one will lose his way, and get trapped by the Ignorance Tree, with passion and chaos fading into his body. Then comes GiGi the deer, pure like a snowflake in the starry sky, bringing peace with harmony. The man gather up his knowledge and find the way to the dawn of the Forest, and free.",
-        "link":"/resume/resume.html"
+        "link":"https://austinjiangh.github.io/GiGi/resume/resume.html"
     },
 
     "partTwo":{
         "title": "BLOG",
         "description": "My recent blogs.",
-        "link":"/blog.html"
+        "link":"https://austinjiangh.github.io/GiGi/blog.html"
     },
 
     "partThree":{
         "title": "A CHART",
         "description": "Bloom",
-        "link":"/blog.html"
+        "link":"https://austinjiangh.github.io/GiGi/blog.html"
     },
 
     "partFour":{
         "title": "MORE",
         "description": "Something to add.",
         "text": "This theme is powered by jekyll for the Project China's Price Project(CPP). CPP is located in Xiamen University, China; this theme will be used as the personal blog for all the team members on github. But I hope who ever use this theme will have a good experience.",
-        "link":"/index.html"
+        "link":"https://austinjiangh.github.io/GiGi/index.html"
 
     },
 
@@ -35,19 +35,19 @@
     "nav":[
         {
             "title": "Home",
-            "url": "/index.html"
+            "url": "https://austinjiangh.github.io/GiGi/index.html"
         },
         {
             "title": "Gallery",
-            "url": "/index.html"
+            "url": "https://austinjiangh.github.io/GiGi/index.html"
         },
         {
             "title": "Blog",
-            "url": "/blog.html"
+            "url": "https://austinjiangh.github.io/GiGi/blog.html"
         },
         {
             "title": "Me",
-            "url": "/resume/resume.html"
+            "url": "https://austinjiangh.github.io/GiGi/resume/resume.html"
         }
     ],
 
