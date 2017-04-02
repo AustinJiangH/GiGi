@@ -1,0 +1,8 @@
+title: GiGi
+description: a theme for jekyll
+author: Austin
+date: 2017/03/31
+
+permalink: /:categories/:title
+
+url: "http://127.0.0.1:4000"

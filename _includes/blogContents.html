@@ -1,0 +1,16 @@
+<main class="blog-content">
+    <article>
+        <h1>Contents</h1>
+        <hr>
+
+        {% for category in site.categories %}
+        <h1>{{ category | first }}</h1>
+        <!--</span>{{ category | last | size }}</span>-->
+        <ul>
+            {% for post in category.last %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </article>
+</main>

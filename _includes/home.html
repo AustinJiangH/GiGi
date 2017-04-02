@@ -1,0 +1,45 @@
+<main class="home">
+
+    <section class="me">
+        <h1>{{ site.data.info.partOne.title }}</h1>
+        <h2>{{ site.data.info.partOne.description }}</h2>
+        <img src="{{ site.url }}/images/logo.png" alt="GiGi" class="me-card" >
+        <p class="me-card me-p">{{ site.data.info.partOne.text }}</p>
+
+        <a href="{{ site.data.info.partOne.link }}" class="more">See more</a>
+    </section>
+
+    <section class="blog">
+        <h1>{{ site.data.info.partTwo.title }}</h1>
+        <h2>{{ site.data.info.partTwo.description }}</h2>
+
+        {% for post in site.posts  limit: 4 %}
+        <div class="card card-hide blog-card">
+            <a href="{{ site.url }}{{ post.url }}">
+                <h2>{{ post.title }}</h2>
+                <hr>
+                <p>{{ post.excerpt | strip_html }}</p></a>
+
+        </div>
+        {% endfor %}
+
+        <a href="{{ site.data.info.partTwo.link }}" class="more">See more</a>
+    </section>
+
+    <section class="echart">
+        <h1>{{ site.data.info.partThree.title }}</h1>
+        <h2>{{ site.data.info.partThree.description }}</h2>
+        <div id="chart"></div>
+        <a href="{{ site.data.info.partThree.link }}" class="more">See more</a>
+    </section>
+
+    <section class="addition">
+        <h1>{{ site.data.info.partFour.title }}</h1>
+        <h2>{{ site.data.info.partFour.description }}</h2>
+
+        <p>{{ site.data.info.partFour.text }}</p>
+
+        <a href="{{ site.data.info.partFour.link }}" class="more">See more</a>
+
+    </section>
+</main>

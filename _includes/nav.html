@@ -1,0 +1,38 @@
+<nav>
+
+
+    <div class="logo">
+        <a href="{{ site.url }}/index.html"><img src="{{ site.url }}/images/logo.png" alt="GiGi"></a>
+    </div>
+
+    <span class="float-right menu-wrapper">
+        <ul>
+            {% for item in site.data.info.nav %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+            <!--<li><a href="#">menu-2</a></li>-->
+            <!--<li><a href="#">menu-3</a></li>-->
+            <!--<li><a href="#">menu-4</a></li>-->
+            <!--{% for item in site.data.info.nav %}-->
+                <!--<li><a href="{{ item.url }}">{{ item.title }}</a></li>-->
+            <!--{% endfor %}-->
+        </ul>
+        <i class="fa fa-bars bars" ></i>
+
+    </span>
+
+    <div class="mobile-menu slide-out">
+        <i class="fa fa-times cross float-right" ></i>
+        <a href="{{ site.url }}/index.html"><img src="{{ site.url }}/images/logo.png" alt="GiGi"></a>
+
+        <ul>
+            {% for item in site.data.info.nav %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+            <!--{% for item in site.data.info.nav %}-->
+            <!--<li><a href="{{ item.url }}">{{ item.title }}</a></li>-->
+            <!--{% endfor %}-->
+        </ul>
+
+    </div>
+</nav>

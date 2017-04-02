@@ -1,0 +1,36 @@
+<main class="blog-content">
+    <article>
+        {{ content }}
+    </article>
+    <aside>
+        <h1><i class="fa fa-phone"></i> Contact Me</h1>
+        <ul>
+            {% for link in site.data.info.socialMedia %}
+                <a href="{{ link.url }}" target="_blank"><i class="fa {{link.icon}}" style="font-size: 2rem"></i>&nbsp;</a>
+            {% endfor %}
+        </ul>
+
+    </aside>
+    <aside>
+        <h1>
+            <i class="fa fa-link"></i> Links
+        </h1>
+        <ul>
+            {% for link in site.data.info.links %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </aside>
+    <aside>
+        <h1><i class="fa fa-bookmark"></i> Blogs</h1>
+        <ul>
+            {% for post in site.posts limit:5  %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title}}&nbsp;&nbsp;&nbsp;
+                <span>{{ post.date | date_to_string }}</span>
+            </a></li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+</main>
